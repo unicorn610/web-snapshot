@@ -3,17 +3,16 @@ A simple gadget for taking web page snapshot
 
 ## Installation
 
-### Clone from GitHub
 ```sh
-$ git clone https://github.com/unicorn610/web-snapshot.git
+npm install unicorn610/web-snapshot
 ```
-
-Install dependencies
+or
 ```sh
-npm install
+yarn add unicorn610/web-snapshot
 ```
 
 ## Quick Start
-```sh
 
+```sh
+npx web-snapshot <url>
 ```
