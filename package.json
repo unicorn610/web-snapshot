@@ -1,0 +1,42 @@
+{
+    "name": "web-snapshot",
+    "version": "0.1.0",
+    "description": "A web page snapshot tool",
+    "keywords": [
+        "web",
+        "snapshot"
+    ],
+    "author": "Vincent Liu <unicorn610@gmail.com>",
+    "license": "MIT",
+    "main": "index.js",
+    "type": "commonjs",
+    "module": "ems.js",
+    "bin": {
+        "web-snapshot": "./bin/index.js"
+    },
+    "scripts": {
+        "clean": "rm -rf dist",
+        "web-snapshot": "node ./bin/index.js",
+        "start": "npm run web-snapshot",
+        "test": "echo test"
+    },
+    "files": [
+        "index.js",
+        "lib/*.js",
+        "esm.mjs"
+    ],
+    "exports": {
+        ".": {
+            "require": "./index.js",
+            "import": "./esm.mjs"
+        },
+        "./esm.mjs": "./esm.mjs"
+    },
+    "dependencies": {
+        "commander": "^9.4.1",
+        "puppeteer": "^19.1.0"
+    },
+    "engines": {
+        "node": ">=14"
+    }
+}
