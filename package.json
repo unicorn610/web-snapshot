@@ -8,17 +8,23 @@
     ],
     "author": "Vincent Liu <unicorn610@gmail.com>",
     "license": "MIT",
+    "homepage": "https://github.com/unicorn610/web-snapshot",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/unicorn610/web-snapshot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/unicorn610/web-snapshot/issues"
+    },
     "main": "index.js",
     "type": "commonjs",
-    "module": "ems.js",
+    "module": "esm.mjs",
     "bin": {
         "web-snapshot": "./bin/index.js"
     },
     "scripts": {
-        "clean": "rm -rf dist",
-        "web-snapshot": "node ./bin/index.js",
-        "start": "npm run web-snapshot",
-        "test": "echo test"
+        "start": "node ./bin/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "files": [
         "index.js",
